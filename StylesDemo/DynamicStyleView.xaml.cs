@@ -6,4 +6,9 @@ public partial class DynamicStyleView : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void Btn_Clicked(object sender, EventArgs e)
+    {
+		Resources["dynamicStyle"] = Resources["greenStyle"];
+    }
 }
