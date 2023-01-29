@@ -24,16 +24,7 @@
         
     </ContentPage.Resources>
     -->
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary>
-                    <Color x:Key="bgColor">#323031</Color>
-                </ResourceDictionary>
-                <ResourceDictionary Source="Resources/Styles/MyStyle.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-        </ContentPage.Resources>
+        
     <ScrollView>
         
         <VerticalStackLayout>
