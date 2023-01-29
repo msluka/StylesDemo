@@ -6,6 +6,11 @@
     
     <ContentPage.Resources>
 
+        <Style TargetType="Label">
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="Title"/>
+            <Setter Property="TextColor" Value="{AppThemeBinding Light=DarkBlue, Dark=White}"/>
+        </Style>
         <Style TargetType="Button"
                Class="DarkBG">
             <Setter Property="BackgroundColor" Value="DarkBlue"/>
@@ -21,6 +26,7 @@
     </ContentPage.Resources>
     
     <VerticalStackLayout>
+        <Label Text="MAUI"></Label>
         <Button Text="Click Me" StyleClass="LightBG, DarkText"/>
         <Button Text="Click Me" StyleClass="DarkBG"/>
     </VerticalStackLayout>
