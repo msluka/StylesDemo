@@ -7,7 +7,8 @@
         
         <Color x:Key="bgColor">#323031</Color>
         
-        <Style TargetType="VerticalStackLayout">
+        <Style TargetType="StackBase"
+               ApplyToDerivedTypes="True">
             <Setter Property="VerticalOptions" Value="Center"/>
             <Setter Property="Padding" Value="30"/>
             <Setter Property="Spacing" Value="25"/>
@@ -24,19 +25,14 @@
     </ContentPage.Resources>
 
     <ScrollView>
-
-        <ScrollView.Resources>
-            <Style TargetType="VerticalStackLayout">
-                <Setter Property="VerticalOptions" Value="Start"/>
-            </Style>
-        </ScrollView.Resources>
-
+        
         <VerticalStackLayout>
 
             <Button Text="LOGIN" Style="{StaticResource btnStyle}"/>
             <Button Text="VISIT"/>
 
         </VerticalStackLayout>
+        
     </ScrollView>
 
 </ContentPage>
