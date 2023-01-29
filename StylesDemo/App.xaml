@@ -4,11 +4,27 @@
              xmlns:local="clr-namespace:StylesDemo"
              x:Class="StylesDemo.App">
     <Application.Resources>
-        <ResourceDictionary>
+        <!--<ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+        </ResourceDictionary>-->
+        <Color x:Key="bgColor">#323031</Color>
+
+        <Style TargetType="StackBase"
+               ApplyToDerivedTypes="True">
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="Padding" Value="30"/>
+            <Setter Property="Spacing" Value="25"/>
+        </Style>
+
+        <Style TargetType="Button"
+               x:Key="btnStyle">
+            <Setter Property="BackgroundColor" Value="{StaticResource bgColor}"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="TextColor" Value="#ffc857"/>
+        </Style>
     </Application.Resources>
 </Application>
