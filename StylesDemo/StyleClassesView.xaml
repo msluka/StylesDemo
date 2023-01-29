@@ -4,8 +4,24 @@
              x:Class="StylesDemo.StyleClassesView"
              Title="StyleClassesView">
     
+    <ContentPage.Resources>
+
+        <Style TargetType="Button"
+               Class="DarkBG">
+            <Setter Property="BackgroundColor" Value="DarkBlue"/>
+        </Style>
+        <Style TargetType="Button"
+               Class="LightBG">
+            <Setter Property="BackgroundColor" Value="LightBlue"/>
+        </Style>
+        <Style TargetType="Button"
+               Class="DarkText">
+            <Setter Property="TextColor" Value="DarkBlue"/>
+        </Style>
+    </ContentPage.Resources>
+    
     <VerticalStackLayout>
-        <Button Text="Click Me"></Button>
-        <Button Text="Click Me"></Button>
+        <Button Text="Click Me" StyleClass="LightBG, DarkText"/>
+        <Button Text="Click Me" StyleClass="DarkBG"/>
     </VerticalStackLayout>
 </ContentPage>
