@@ -12,7 +12,7 @@
     <VerticalStackLayout HorizontalOptions="Center"
                          VerticalOptions="Center">
         <Button Text="Click Me"
-                Style="{DynamicResource dynamicStyle}"></Button>
+                Style="{DynamicResource dynamicStyle}" Clicked="Btn_Clicked_back"></Button>
         <Button Text="Click Me"></Button>
         <Button Text="Change the style" Clicked="Btn_Clicked"></Button>
     </VerticalStackLayout>
