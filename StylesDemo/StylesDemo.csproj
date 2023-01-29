@@ -49,6 +49,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="DynamicStyleView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Resources\Styles\MyStyle.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
