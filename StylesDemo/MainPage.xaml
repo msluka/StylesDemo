@@ -23,7 +23,13 @@
     </ContentPage.Resources>
 
     <ScrollView>
-        
+
+        <ScrollView.Resources>
+            <Style TargetType="VerticalStackLayout">
+                <Setter Property="VerticalOptions" Value="Start"/>
+            </Style>
+        </ScrollView.Resources>
+
         <VerticalStackLayout>
 
             <Button Text="LOGIN"/>
