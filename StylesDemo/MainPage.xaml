@@ -28,7 +28,7 @@
         
         <VerticalStackLayout>
 
-            <Button Text="LOGIN" Style="{StaticResource btnStyle}"/>
+            <Button Text="LOGIN" Style="{StaticResource specialBtn}"/>
             <Button Text="VISIT"/>
 
         </VerticalStackLayout>
